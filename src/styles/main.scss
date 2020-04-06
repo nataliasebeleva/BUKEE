@@ -28,7 +28,9 @@ body {
 	color: $light-color;
 	padding-bottom: 162px;
 }
-
+.page {
+	margin-top: 161px;
+}
 .header {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -39,7 +41,7 @@ body {
 	align-items: center;
 	max-width: 1170px;
 	margin: 0 auto;
-	padding-top: 38px;
+	padding-top: 46px;
 	padding-bottom: 166px;
 	&__logo {
 		display: block;
@@ -85,6 +87,10 @@ body {
 		letter-spacing: 0.7px;
 		margin-bottom: 30px;
 	}
+	&__name-top {
+		margin-top: 16px;
+		margin-left: 0;
+	}
 	&__title {
 		font-size: 48px;
 		font-weight: 700;
@@ -102,8 +108,7 @@ body {
 		font-family: 'Open Sans', serif;
 		font-size: 15px;
 		line-height: 24px;
-		letter-spacing: 0.7px;
-		letter-spacing: 0.7px;
+		letter-spacing: 0.75px;
 		margin-bottom: 35px;
 	}
 	&__btn {
@@ -141,5 +146,26 @@ body {
 		background-repeat: no-repeat;
 		flex-basis: 500px;
 		
+	}
+}
+
+.block-author {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.block-ava {
+	position: relative;
+	&__svg {
+		position: absolute;
+		right: 0;
+		z-index: -1;
+	}
+	&__img {
+		margin-top: 47px;
+		margin-right: 44px;
 	}
 }
